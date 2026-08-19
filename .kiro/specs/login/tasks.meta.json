@@ -1,0 +1,107 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1. Install and pin `flask-jwt-extended`": [
+      {
+        "executionId": "b258fea0-ce8a-4d4a-876c-99ab49148c9e",
+        "chatSessionId": "sess_c1b09d92-4745-4ddf-89d8-ca77dc16829c",
+        "timestamp": 1786414199427
+      },
+      {
+        "executionId": "b258fea0-ce8a-4d4a-876c-99ab49148c9e",
+        "chatSessionId": "sess_c1b09d92-4745-4ddf-89d8-ca77dc16829c",
+        "timestamp": 1786414206233
+      },
+      {
+        "executionId": "b258fea0-ce8a-4d4a-876c-99ab49148c9e",
+        "chatSessionId": "sess_c1b09d92-4745-4ddf-89d8-ca77dc16829c",
+        "timestamp": 1786414860186
+      }
+    ],
+    "2. Add `JWTManager` to `extensions.py`": [
+      {
+        "executionId": "b258fea0-ce8a-4d4a-876c-99ab49148c9e",
+        "chatSessionId": "sess_c1b09d92-4745-4ddf-89d8-ca77dc16829c",
+        "timestamp": 1786414199609
+      },
+      {
+        "executionId": "b258fea0-ce8a-4d4a-876c-99ab49148c9e",
+        "chatSessionId": "sess_c1b09d92-4745-4ddf-89d8-ca77dc16829c",
+        "timestamp": 1786414870490
+      },
+      {
+        "executionId": "b258fea0-ce8a-4d4a-876c-99ab49148c9e",
+        "chatSessionId": "sess_c1b09d92-4745-4ddf-89d8-ca77dc16829c",
+        "timestamp": 1786415044307
+      }
+    ],
+    "3. Add `JWT_SECRET_KEY` to `config.py`": [
+      {
+        "executionId": "b258fea0-ce8a-4d4a-876c-99ab49148c9e",
+        "chatSessionId": "sess_c1b09d92-4745-4ddf-89d8-ca77dc16829c",
+        "timestamp": 1786414199681
+      },
+      {
+        "executionId": "b258fea0-ce8a-4d4a-876c-99ab49148c9e",
+        "chatSessionId": "sess_c1b09d92-4745-4ddf-89d8-ca77dc16829c",
+        "timestamp": 1786415047212
+      },
+      {
+        "executionId": "b258fea0-ce8a-4d4a-876c-99ab49148c9e",
+        "chatSessionId": "sess_c1b09d92-4745-4ddf-89d8-ca77dc16829c",
+        "timestamp": 1786415135377
+      }
+    ],
+    "4. Initialize `JWTManager` in the app factory (`app.py`)": [
+      {
+        "executionId": "b258fea0-ce8a-4d4a-876c-99ab49148c9e",
+        "chatSessionId": "sess_c1b09d92-4745-4ddf-89d8-ca77dc16829c",
+        "timestamp": 1786414199731
+      },
+      {
+        "executionId": "b258fea0-ce8a-4d4a-876c-99ab49148c9e",
+        "chatSessionId": "sess_c1b09d92-4745-4ddf-89d8-ca77dc16829c",
+        "timestamp": 1786415138878
+      },
+      {
+        "executionId": "b258fea0-ce8a-4d4a-876c-99ab49148c9e",
+        "chatSessionId": "sess_c1b09d92-4745-4ddf-89d8-ca77dc16829c",
+        "timestamp": 1786415231619
+      }
+    ],
+    "5. Update `auth_controller.py` to return a JWT on successful login": [
+      {
+        "executionId": "b258fea0-ce8a-4d4a-876c-99ab49148c9e",
+        "chatSessionId": "sess_c1b09d92-4745-4ddf-89d8-ca77dc16829c",
+        "timestamp": 1786414199798
+      },
+      {
+        "executionId": "b258fea0-ce8a-4d4a-876c-99ab49148c9e",
+        "chatSessionId": "sess_c1b09d92-4745-4ddf-89d8-ca77dc16829c",
+        "timestamp": 1786415234566
+      },
+      {
+        "executionId": "b258fea0-ce8a-4d4a-876c-99ab49148c9e",
+        "chatSessionId": "sess_c1b09d92-4745-4ddf-89d8-ca77dc16829c",
+        "timestamp": 1786415318582
+      }
+    ],
+    "6. Smoke-test the full login flow": [
+      {
+        "executionId": "b258fea0-ce8a-4d4a-876c-99ab49148c9e",
+        "chatSessionId": "sess_c1b09d92-4745-4ddf-89d8-ca77dc16829c",
+        "timestamp": 1786414199872
+      },
+      {
+        "executionId": "b258fea0-ce8a-4d4a-876c-99ab49148c9e",
+        "chatSessionId": "sess_c1b09d92-4745-4ddf-89d8-ca77dc16829c",
+        "timestamp": 1786415322759
+      },
+      {
+        "executionId": "b258fea0-ce8a-4d4a-876c-99ab49148c9e",
+        "chatSessionId": "sess_c1b09d92-4745-4ddf-89d8-ca77dc16829c",
+        "timestamp": 1786415411242
+      }
+    ]
+  }
+}
