@@ -1,5 +1,6 @@
 import os
 from flask import Flask, jsonify
+from werkzeug.exceptions import HTTPException
 from extensions import db, migrate, jwt
 from config import config_by_name
 
@@ -27,6 +28,14 @@ def create_app(config_name: str = None):
     @app.route("/health")
     def health():
         return jsonify({"status": "ok"}), 200
+
+    @app.errorhandler(Exception)
+    def handle_exception(e):
+        # Re-raise HTTP exceptions so Flask handles them normally
+        if isinstance(e, HTTPException):
+            return e
+        # For any other unexpected exception, return a generic 500
+        return jsonify({"error": "Error interno del servidor."}), 500
 
     return app
 

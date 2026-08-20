@@ -1,0 +1,4 @@
+# file: C:\Users\Desktop\Desktop\jp\2026\mod4\ejercicio kiro\config.py
+# hypothesis_version: 6.131.15
+
+['DATABASE_URL', 'JWT_SECRET_KEY', 'default', 'development', 'production', 'sqlite:///:memory:', 'sqlite:///app.db', 'test-secret-key', 'testing']

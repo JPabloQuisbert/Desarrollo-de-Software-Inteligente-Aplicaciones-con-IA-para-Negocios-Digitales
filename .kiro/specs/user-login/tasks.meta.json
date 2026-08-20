@@ -1,0 +1,303 @@
+{
+  "pbtResults": {},
+  "executionHistory": {
+    "1.1 Instalar y anclar dependencias de test": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787195305789
+      },
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787195312973
+      },
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787195430359
+      }
+    ],
+    "1.2 Verificar o extender `tests/conftest.py` con fixtures para login": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787195305964
+      },
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787195436795
+      },
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787195579887
+      }
+    ],
+    "1.3 Crear `tests/unit/conftest.py` con estrategias de Hypothesis para login": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787195306071
+      },
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787195439695
+      },
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787195583320
+      }
+    ],
+    "2.1 Crear `tests/unit/test_user_validator_login.py` con clase base": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787195306160
+      },
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787195592252
+      },
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787196050934
+      }
+    ],
+    "3. Checkpoint — Validar property tests del validador": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787195306219
+      }
+    ],
+    "4.1 Crear `tests/unit/test_auth_service_login.py` con repositorios mock": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787195306278
+      },
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787195595182
+      },
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787196054302
+      }
+    ],
+    "5. Checkpoint — Validar property tests del servicio": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787195306336
+      }
+    ],
+    "6.1 Crear `tests/unit/test_auth_controller_login.py` con Flask test client y mocks": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787195306395
+      },
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787195598140
+      },
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787196057664
+      }
+    ],
+    "7.1 Escribir tests de ejemplo en `tests/unit/test_auth_controller_login.py`": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787195306448
+      }
+    ],
+    "8. Checkpoint — Validar suite completa del controller": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787195306500
+      }
+    ],
+    "9.1 Registrar `@app.errorhandler(Exception)` en la función `create_app`": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787195306578
+      },
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787196065651
+      },
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787196165906
+      }
+    ],
+    "10.1 Ejecutar `smoke_test_login.py` como verificación de capa de integración": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787195306683
+      }
+    ],
+    "11. Checkpoint final — Verificar cobertura y consistencia": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787195306736
+      }
+    ],
+    "1. Configurar infraestructura de tests": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787195583373
+      }
+    ],
+    "2. Property tests para `UserValidator` — propiedades 1 a 5": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787196051002
+      }
+    ],
+    "4. Property tests para `AuthService` — propiedades 6 y 7": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787196054411
+      }
+    ],
+    "6. Property tests y unit tests para `AuthController` — propiedades 8 a 10": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787196057762
+      }
+    ],
+    "9. Añadir error handler global en `app.py` (si no existe)": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787196166010
+      }
+    ],
+    "2.2 Escribir property test — Propiedad 1: identificador ausente siempre produce el error correcto": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787196188735
+      },
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787196251983
+      }
+    ],
+    "2.3 Escribir property test — Propiedad 2: email con formato inválido siempre es rechazado": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787196191995
+      },
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787196255816
+      }
+    ],
+    "2.4 Escribir property test — Propiedad 3: username corto siempre es rechazado": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787196195365
+      },
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787196259075
+      }
+    ],
+    "2.5 Escribir property test — Propiedad 4: password ausente o vacía siempre es rechazada": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787196198755
+      },
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787196567911
+      }
+    ],
+    "2.6 Escribir property test — Propiedad 5: normalización de entrada aplicada consistentemente": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787196201925
+      },
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787196571347
+      }
+    ],
+    "4.2 Escribir property test — Propiedad 6: lookup enrutado al método correcto del repositorio": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787196213072
+      }
+    ],
+    "4.3 Escribir property test — Propiedad 7: fallo de credenciales siempre produce el mismo mensaje": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787196216740
+      }
+    ],
+    "6.2 Escribir property test — Propiedad 8: JWT identity es siempre str(user.id)": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787196220560
+      }
+    ],
+    "6.3 Escribir property test — Propiedad 9: respuesta exitosa contiene campos requeridos y no expone campos sensibles": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787196225390
+      }
+    ],
+    "6.4 Escribir property test — Propiedad 10: ningún input JSON parseable produce HTTP 500": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787196228773
+      }
+    ],
+    "9.2 Escribir test de ejemplo para el handler global de 500": [
+      {
+        "executionId": "05f7a4cc-7421-46b3-9586-8b9d1667cc44",
+        "chatSessionId": "sess_3426833b-40fe-4c28-9e36-7ac6d955f389",
+        "timestamp": 1787196232539
+      }
+    ]
+  }
+}
