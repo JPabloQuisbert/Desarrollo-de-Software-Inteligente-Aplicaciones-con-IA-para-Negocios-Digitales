@@ -2,6 +2,46 @@
 
 API REST construida con Flask que implementa registro e inicio de sesión de usuarios con autenticación basada en JWT (JSON Web Tokens).
 
+## Arquitectura
+
+El proyecto usa una **arquitectura modular por dominio**. Cada dominio de negocio vive en su propia carpeta dentro de `modules/` y contiene todas las capas que le corresponden: modelo, validación, repositorio, servicio y controlador.
+
+```
+modules/
+└── auth/               ← dominio de autenticación
+    ├── model.py        ← capa de datos: entidad User (SQLAlchemy)
+    ├── schema.py       ← capa de validación: UserValidator, RegisterInput, LoginInput
+    ├── repository.py   ← capa de persistencia: consultas a la BD
+    ├── service.py      ← capa de negocio: reglas de registro y login
+    └── controller.py   ← capa de presentación: Blueprint con las rutas HTTP
+```
+
+Cada capa tiene una única responsabilidad y solo conoce a la capa inmediatamente inferior:
+
+```
+HTTP request
+    │
+    ▼
+controller.py   →  valida con schema.py
+    │
+    ▼
+service.py      →  aplica reglas de negocio
+    │
+    ▼
+repository.py   →  accede a la BD a través de model.py
+```
+
+Los archivos en la raíz son infraestructura compartida que no pertenece a ningún dominio:
+
+| Archivo | Rol |
+|---|---|
+| `app.py` | Factory de la aplicación Flask |
+| `extensions.py` | Instancias compartidas de `db`, `migrate`, `jwt` |
+| `config.py` | Configuraciones por entorno |
+| `db.py` | Script de creación de base de datos PostgreSQL |
+
+---
+
 ## ¿Qué hace?
 
 - Registra nuevos usuarios con validación de datos (username, email, contraseña)
@@ -27,16 +67,20 @@ API REST construida con Flask que implementa registro e inicio de sesión de usu
 ├── config.py               # Configuraciones por entorno
 ├── extensions.py           # Instancias de db, migrate, jwt
 ├── db.py                   # Script de creación de base de datos PostgreSQL
-├── models/
-│   └── user.py             # Modelo User (id, username, email, password_hash)
-├── controllers/
-│   └── auth_controller.py  # Endpoints de registro y login
-├── services/
-│   └── auth_service.py     # Lógica de negocio de autenticación
-├── repositories/
-│   └── user_repository.py  # Acceso a datos del usuario
-├── schemas/
-│   └── user_schema.py      # Validación y dataclasses de entrada
+├── modules/
+│   └── auth/
+│       ├── model.py        # Modelo User (id, username, email, password_hash)
+│       ├── schema.py       # Validación y dataclasses de entrada
+│       ├── repository.py   # Acceso a datos del usuario
+│       ├── service.py      # Lógica de negocio de autenticación
+│       └── controller.py   # Endpoints de registro y login
+├── tests/
+│   ├── conftest.py         # Fixtures de pytest (app, client, db_session, usuarios)
+│   └── unit/
+│       ├── conftest.py     # Estrategias de Hypothesis
+│       ├── test_user_validator_login.py
+│       ├── test_auth_service_login.py
+│       └── test_auth_controller_login.py
 ├── smoke_test_login.py     # Tests funcionales del endpoint de login
 └── requirements.txt        # Dependencias del proyecto
 ```
