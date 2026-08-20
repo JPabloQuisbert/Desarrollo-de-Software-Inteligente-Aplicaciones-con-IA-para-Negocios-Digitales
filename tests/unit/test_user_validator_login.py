@@ -28,9 +28,25 @@ from tests.unit.conftest import (
 validator = UserValidator()
 
 # ---------------------------------------------------------------------------
-# TODO (task 2.4): Property 3 -- short username is always rejected
 # TODO (task 2.6): Property 5 -- input normalization is applied consistently
 # ---------------------------------------------------------------------------
+
+
+# Feature: user-login, Property 3: short username is always rejected
+@given(username=short_username_st, password=nonempty_password_st)
+@settings(max_examples=100)
+def test_short_username_always_rejected(username, password):
+    """**Validates: Requirements 2.3**
+
+    For any string whose stripped length is < 3 (including empty string),
+    together with a non-empty password and no email field, validate_login
+    must always raise ValueError — either "missing identifier" (stripped
+    to empty) or "username too short" (stripped to 1-2 chars).  Both are
+    correct rejections; the key invariant is that the call never succeeds.
+    """
+    data = {"username": username, "password": password}
+    with pytest.raises(ValueError):
+        validator.validate_login(data)
 
 
 # Feature: user-login, Property 1: missing identifier always produces the correct error
