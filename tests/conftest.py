@@ -1,9 +1,9 @@
-import pytest
+﻿import pytest
 from werkzeug.security import generate_password_hash
 
 from app import create_app
 from extensions import db as _db
-from models.user import User
+from modules.auth.model import User
 
 
 @pytest.fixture(scope="session")

@@ -1,0 +1,4 @@
+# file: C:\Users\Desktop\Desktop\jp\2026\mod4\ejercicio kiro\app.py
+# hypothesis_version: 6.131.15
+
+[200, 500, '/', '/health', 'FLASK_ENV', 'Hola Flask', '__main__', 'default', 'error', 'ok', 'status']

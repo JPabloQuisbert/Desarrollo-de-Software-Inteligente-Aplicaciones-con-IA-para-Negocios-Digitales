@@ -1,4 +1,4 @@
-"""
+﻿"""
 smoke_test_login.py
 -------------------
 Smoke-tests for the POST /auth/login endpoint.
@@ -7,10 +7,10 @@ running server or external tooling is required.
 
 Scenarios verified
 ------------------
-1. Login with email + correct password  → 200, access_token present, no password_hash
-2. Login with username + correct password → 200, access_token present, no password_hash
-3. Login with correct email but wrong password → 401, "Credenciales incorrectas."
-4. Login with no identifier (no email, no username) → 400
+1. Login with email + correct password  â†’ 200, access_token present, no password_hash
+2. Login with username + correct password â†’ 200, access_token present, no password_hash
+3. Login with correct email but wrong password â†’ 401, "Credenciales incorrectas."
+4. Login with no identifier (no email, no username) â†’ 400
 """
 
 import json
@@ -31,8 +31,8 @@ from werkzeug.security import generate_password_hash
 # Helpers
 # ---------------------------------------------------------------------------
 
-PASS = "✓"
-FAIL = "✗"
+PASS = "âœ“"
+FAIL = "âœ—"
 
 results = []
 
@@ -41,7 +41,7 @@ def check(label: str, condition: bool, detail: str = ""):
     symbol = PASS if condition else FAIL
     msg = f"  [{symbol}] {label}"
     if detail:
-        msg += f"  — {detail}"
+        msg += f"  â€” {detail}"
     print(msg)
     results.append((label, condition))
 
@@ -73,7 +73,7 @@ with app.app_context():
     _db.drop_all()   # wipe any state from previous runs
     _db.create_all()
     # Seed a test user directly so we don't depend on the register endpoint.
-    from models.user import User
+    from modules.auth.model import User
     user = User(
         username=TEST_USERNAME,
         email=TEST_EMAIL,
@@ -85,7 +85,7 @@ with app.app_context():
 client = app.test_client()
 
 # ---------------------------------------------------------------------------
-# Scenario 1 — Login with email + correct password
+# Scenario 1 â€” Login with email + correct password
 # ---------------------------------------------------------------------------
 print("\nScenario 1: Login with email + correct password")
 resp = post_login(client, {"email": TEST_EMAIL, "password": TEST_PASSWORD})
@@ -99,7 +99,7 @@ check("email is present", "email" in body)
 check("password_hash is absent", "password_hash" not in body)
 
 # ---------------------------------------------------------------------------
-# Scenario 2 — Login with username + correct password
+# Scenario 2 â€” Login with username + correct password
 # ---------------------------------------------------------------------------
 print("\nScenario 2: Login with username + correct password")
 resp = post_login(client, {"username": TEST_USERNAME, "password": TEST_PASSWORD})
@@ -112,7 +112,7 @@ check("username matches", body.get("username") == TEST_USERNAME)
 check("password_hash is absent", "password_hash" not in body)
 
 # ---------------------------------------------------------------------------
-# Scenario 3 — Correct email, wrong password → 401
+# Scenario 3 â€” Correct email, wrong password â†’ 401
 # ---------------------------------------------------------------------------
 print("\nScenario 3: Correct email, wrong password")
 resp = post_login(client, {"email": TEST_EMAIL, "password": "wrongpassword"})
@@ -127,7 +127,7 @@ check(
 check("password_hash is absent", "password_hash" not in body)
 
 # ---------------------------------------------------------------------------
-# Scenario 4 — No identifier provided → 400
+# Scenario 4 â€” No identifier provided â†’ 400
 # ---------------------------------------------------------------------------
 print("\nScenario 4: No identifier (no email, no username)")
 resp = post_login(client, {"password": TEST_PASSWORD})
